@@ -14,7 +14,7 @@ const Hero = () => {
             v0.1 Telegram Bot is available now! 🚀
           </Badge>
           <h1 className="mt-6 max-w-[40ch] text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold !leading-[1.2] tracking-tight">
-            Next-Gen Group Management with Ai and Verifiable Credentials
+            Next-Gen Social Management with Ai and Verifiable Credentials
           </h1>
           <p className="mt-6 max-w-[60ch] xs:text-lg">
             Empower your Social pages with secure, verifiable credentials using Web3 technology. Manage access, verify identities, Custom AI Agent.
