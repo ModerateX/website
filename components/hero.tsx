@@ -1,8 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import React from "react";
-import LogoCloud from "./logo-cloud";
 import Link from "next/link";
 
 const Hero = () => {

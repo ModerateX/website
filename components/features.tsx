@@ -5,7 +5,6 @@ import {
   Film,
   Globe2,
   MessageCircle,
-  Settings2,
 } from "lucide-react";
 import React from "react";
 
