@@ -1,12 +1,13 @@
 import { db } from "@/drizzle/db";
 import { groups } from "@/drizzle/schema";
 import { eq } from "drizzle-orm";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export async function GET(request: NextRequest, { params }: { params: { groupId: string } }) {
+
+export async function GET(request: Request, { params }: { params: Promise<{ groupId: string }> }) {
   const { searchParams } = new URL(request.url);
   const auth_token = searchParams.get("auth_token");
-  const { groupId } = params;
+  const { groupId } = await params;
 
   if (!groupId) {
     return NextResponse.json({ error: "Group ID is required" }, { status: 400 });
