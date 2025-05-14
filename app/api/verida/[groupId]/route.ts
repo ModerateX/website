@@ -3,6 +3,7 @@ import { groups } from "@/drizzle/schema";
 import { eq } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
+export const runtime = 'edge';
 
 export async function GET(request: Request, { params }: { params: Promise<{ groupId: string }> }) {
   const { searchParams } = new URL(request.url);
